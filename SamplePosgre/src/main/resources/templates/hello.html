@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8" />
+  <title></title>
+</head>
+<body>
+<p>
+  <span th:text="${hello}"></span>
+</p>
+  <table>
+    <tr th:each="data : ${shohinDataList}" th:object="${data}">
+      <td th:text="*{shohin_id}"></td>
+      <td th:text="*{hanbaimoto_id}"></td>
+      <td th:text="*{shohin_mei}"></td>
+      <td th:text="*{shohin_tanka}"></td>
+    </tr>
+  </table>
+  aaa
+</body>
